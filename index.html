@@ -29,9 +29,10 @@
         ";return output;"
       );
     }
-    //cards.nArr
+    
     let cards = {
       nArr: (new Array(12)).fill('https://media.tenor.com/images/9e662d9e09e6ac74838ed6926f80afb3/tenor.gif')
+      ,nArr2 : (new Array(6)).fill('https://media.tenor.com/images/573c5f9c9eb28c23c8b0a323b519880b/tenor.gif')
     }
 
   </script>
@@ -90,16 +91,16 @@
         </script>
 
 
-
+        
   </div>
   <hr>
   <div class="container mt-5">
-    <script type="text/template" id="ex3">
+    <script type="text/template" id="ex4">
         <div class="row">
-        <% for (let i=0; i < cards.nArr.length; i++) { %>
-        <div class="col-xl-3 col-md-4 col-sm-6">
+        <% for (let i=0; i < cards.nArr2.length; i++) { %>
+        <div class="col-xl-2 col-md-4 col-sm-6">
           <div class="card" >
-            <img src="<%= cards.nArr[i] %>" class="card-img-top" alt="...">
+            <img src="<%= cards.nArr2[i] %>" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -213,11 +214,19 @@
    Mykola :   Difficulty 2 ...all the cards with the same class
   -->
   <script>
-      (function renderAlbumPics() {
+      ;(function renderEx3() {
         let template = document.getElementById('ex3');
         let templateText = template.textContent;
         let render = Templater(templateText);
         document.getElementById('ex3').outerHTML = render(cards)
+      }
+      )() 
+
+      ;(function renderEx4() {
+        let template = document.getElementById('ex4');
+        let templateText = template.textContent;
+        let render = Templater(templateText);
+        document.getElementById('ex4').outerHTML = render(cards)
       }
       )()
   </script>
