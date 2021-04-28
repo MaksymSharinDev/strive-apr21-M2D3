@@ -9,7 +9,7 @@ Work-flow notes:
 - Mykola's Technical Requirements Revision
 - Mykola Story Points Estimates
 - Maybe we spent too much time on Analisys than code&deliver features
-  - that can be changed to do analisys with an incremental approach like Analisys 10 mins, Code 20 mins, reapeat   
+  - that can be changed by doing analisys with an incremental approach like Analisys 10 mins, Code 20 mins, reapeat   
 - We focused to deliver decent looking UI and Code instead of be pushy about doing  most exercise possible 
 - Good amount of time spend on knowlage sharing as by-product of experience off-set
 - Internet connection, screenshare and machine environment difference was the main Bottlenecks for this session
